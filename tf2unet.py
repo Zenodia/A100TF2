@@ -33,8 +33,6 @@ from tensorflow.keras.layers import BatchNormalization , Dropout
 from tensorflow.keras.optimizers import Adam , Nadam,Adamax
 from tensorflow.keras import backend as K
 from tensorflow.keras.losses import binary_crossentropy
-import tensorflow_model_optimization as tfmot
-tfmot.quantization.keras.quantize_annotate_layer
 
 print("tensorflow version ", tf.__version__)
 
