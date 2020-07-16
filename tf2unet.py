@@ -97,7 +97,7 @@ base_model=setup_unet()
 base_model.compile(optimizer='Adam', loss=[combined_dice_binary_loss], metrics=[dice_coef])
 
 # fit model
-model_history=base_model.fit(
+base_model.fit(
   Xtrain,
   Ytrain,
   epochs=20,
